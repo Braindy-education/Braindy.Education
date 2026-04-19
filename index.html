@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braindy Education - English for Kids Singaraja</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        braindyBlue: '#3ABEF9',
+                        braindyYellow: '#FFD93D',
+                        braindySoftBlue: '#F0F9FF',
+                        braindyDark: '#1E293B',
+                    },
+                    fontFamily: {
+                        sans: ['Lexend', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-braindyDark antialiased overflow-x-hidden bg-white">
+
+    <a href="https://wa.me/628216338362" target="_blank" class="fixed bottom-6 right-6 z-[9999] bg-[#25D366] text-white p-4 rounded-full shadow-[0_10px_25px_-5px_rgba(37,211,102,0.4)] hover:scale-110 transition-transform">
+        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8 flex justify-between h-20 items-center">
+            <img src="https://i.ibb.co.com/NdcY3Zz8/logo-bimbel.png" alt="Logo Braindy" class="h-12 w-auto">
+            <div class="hidden md:flex space-x-10 font-semibold text-slate-600">
+                <a href="#home" class="hover:text-braindyBlue transition">Home</a>
+                <a href="#program" class="hover:text-braindyBlue transition">Program</a>
+                <a href="#biaya" class="hover:text-braindyBlue transition">Biaya</a>
+            </div>
+            <a href="https://wa.me/628216338362" target="_blank" class="bg-braindyBlue text-white px-7 py-3 rounded-2xl font-bold shadow-[0_10px_20px_-5px_rgba(58,190,249,0.4)] hover:bg-sky-500 transition-all active:scale-95">Daftar Sesi</a>
+        </div>
+    </nav>
+
+    <section id="home" class="relative overflow-hidden pt-12 pb-24 lg:pt-24 lg:pb-40 px-4">
+        <div class="blob-bg absolute top-0 left-0 -z-10 opacity-40"></div>
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+            
+            <div class="flex-1 text-center lg:text-left order-2 lg:order-1">
+                <div class="inline-flex items-center space-x-2 bg-braindyYellow/20 text-orange-700 px-4 py-2 rounded-full mb-8">
+                    <span class="relative flex h-3 w-3">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-orange-500"></span>
+                    </span>
+                    <span class="text-sm font-extrabold uppercase tracking-widest">Pusat Belajar Singaraja</span>
+                </div>
+                
+                <h1 class="text-4xl lg:text-7xl font-extrabold leading-[1.1] mb-8">
+                    Ubah <span class="text-braindyBlue">Belajar</span> Jadi <span class="text-braindyYellow drop-shadow-sm">Petualangan!</span>
+                </h1>
+                <p class="text-slate-500 mb-10 text-lg lg:text-xl leading-relaxed max-w-2xl">
+                    Kembangkan potensi berpikir dan kemampuan Bahasa Inggris si kecil melalui metode belajar yang aktif, interaktif, dan pastinya seru!
+                </p>
+                
+                <div class="flex flex-wrap justify-center lg:justify-start gap-5">
+                    <a href="https://wa.me/628216338362" class="bg-braindyBlue text-white px-10 py-5 rounded-[2rem] font-extrabold text-xl shadow-2xl shadow-blue-200 hover:-translate-y-1 transition-all">Ambil Free Trial</a>
+                    <div class="flex items-center gap-3">
+                        <div class="flex -space-x-3">
+                            <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-200"></div>
+                            <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-300"></div>
+                        </div>
+                        <p class="text-sm font-bold text-slate-400">Bergabung dengan teman lainnya!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-1 relative order-1 lg:order-2">
+                <div class="absolute -top-10 lg:-top-16 z-20 animate-float w-full">
+                    <div class="bg-white/90 backdrop-blur-md p-4 rounded-3xl shadow-2xl border border-white max-w-[280px] mx-auto lg:mx-0 bubble-tail relative">
+                        <p class="text-braindyDark font-extrabold text-center text-sm lg:text-base">
+                            🐘 "Halo teman-teman! <br>Belajar bareng <span class="text-braindyBlue underline decoration-wavy">Gana</span> yuk!"
+                        </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-0 bg-braindyBlue/10 rounded-full blur-[100px] -z-10 animate-pulse"></div>
+                    <img src="https://i.ibb.co.com/yBZp8Hzr/IMG-7688-JPG-removebg-preview.png" alt="Gana Hero" class="w-56 lg:w-full max-w-md mx-auto drop-shadow-[0_35px_35px_rgba(0,0,0,0.1)] animate-float">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-braindyDark text-white px-4 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h2 class="text-braindyYellow font-extrabold text-sm uppercase tracking-[.3em] mb-6">Filosofi Kami</h2>
+            <p class="text-2xl lg:text-4xl font-semibold leading-snug">
+                Braindy Education: <span class="text-braindyBlue">Brain</span> (Berpikir) + <span class="text-braindyBlue">Education</span> (Belajar) + <span class="text-braindyBlue">Dy</span> (Identitas kami).
+            </p>
+            <p class="mt-8 text-slate-400 lg:text-lg leading-relaxed font-light italic">
+                Kami hadir sebagai komitmen untuk mengembangkan potensi berpikir serta kemampuan berbahasa Inggris siswa melalui pengalaman yang bermakna.
+            </p>
+        </div>
+        <div class="absolute top-0 right-0 w-64 h-64 bg-braindyBlue/10 rounded-full blur-3xl"></div>
+    </section>
+
+    <section id="program" class="py-24 lg:py-40 bg-slate-50 px-4 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-3xl lg:text-5xl font-extrabold mb-4">Mengapa Si Kecil Suka Belajar Disini?</h2>
+                <div class="h-2 w-24 bg-braindyYellow mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="feature-card group p-10 bg-white rounded-[3rem] border-b-8 border-braindyBlue/20 hover:border-braindyBlue transition-all shadow-sm">
+                    <div class="w-16 h-16 bg-braindySoftBlue text-braindyBlue rounded-2xl flex items-center justify-center mb-8 shadow-inner font-bold text-2xl group-hover:rotate-12 transition-transform">1</div>
+                    <h3 class="text-2xl font-bold mb-4">Fokus & Personal</h3>
+                    <p class="text-slate-500 leading-relaxed">Pembelajaran dirancang khusus agar lebih personal, mengikuti kecepatan belajar si kecil tanpa tekanan.</p>
+                </div>
+
+                <div class="feature-card group p-10 bg-white rounded-[3rem] border-b-8 border-braindyYellow/20 hover:border-braindyYellow transition-all shadow-sm">
+                    <div class="w-16 h-16 bg-braindyYellow/10 text-orange-500 rounded-2xl flex items-center justify-center mb-8 shadow-inner font-bold text-2xl group-hover:rotate-12 transition-transform">2</div>
+                    <h3 class="text-2xl font-bold mb-4">Interaktif</h3>
+                    <p class="text-slate-500 leading-relaxed">Metode komunikatif yang mendorong anak berani berekspresi dan percaya diri bicara bahasa Inggris.</p>
+                </div>
+
+                <div class="feature-card group p-10 bg-white rounded-[3rem] border-b-8 border-braindyBlue/20 hover:border-braindyBlue transition-all shadow-sm">
+                    <div class="w-16 h-16 bg-braindySoftBlue text-braindyBlue rounded-2xl flex items-center justify-center mb-8 shadow-inner font-bold text-2xl group-hover:rotate-12 transition-transform">3</div>
+                    <h3 class="text-2xl font-bold mb-4">Monitoring Rutin</h3>
+                    <p class="text-slate-500 leading-relaxed">Orang tua tenang dengan monitoring perkembangan belajar berkala yang kami kirimkan secara rutin.</p>
+                </div>
+
+                <div class="feature-card group p-10 bg-white rounded-[3rem] border-b-8 border-braindyYellow/20 hover:border-braindyYellow transition-all shadow-sm">
+                    <div class="w-16 h-16 bg-braindyYellow/10 text-orange-500 rounded-2xl flex items-center justify-center mb-8 shadow-inner font-bold text-2xl group-hover:rotate-12 transition-transform">4</div>
+                    <h3 class="text-2xl font-bold mb-4">Fleksibel</h3>
+                    <p class="text-slate-500 leading-relaxed">Waktu belajar yang fleksibel mengikuti kesibukan si kecil agar belajar tetap menyenangkan.</p>
+                </div>
+
+                <div class="feature-card group p-10 bg-white rounded-[3rem] border-b-8 border-braindyBlue/20 hover:border-braindyBlue transition-all shadow-sm lg:col-span-2">
+                    <div class="flex flex-col lg:flex-row items-center gap-8">
+                        <div class="w-16 h-16 flex-shrink-0 bg-braindySoftBlue text-braindyBlue rounded-2xl flex items-center justify-center shadow-inner font-bold text-2xl">5</div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4 text-center lg:text-left">Konsultasi PR Sekolah</h3>
+                            <p class="text-slate-500 leading-relaxed text-center lg:text-left">Kesulitan tugas sekolah? Tenang, pengajar kami siap membantu si kecil memahami PR mereka dengan lebih mendalam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 mb-32">
+        <div class="bg-braindyYellow rounded-[4rem] p-10 lg:p-20 relative overflow-hidden shadow-[0_20px_50px_-20px_rgba(255,217,61,0.6)]">
+            <div class="flex flex-col lg:flex-row items-center gap-12 text-center lg:text-left">
+                <div class="flex-1 z-10">
+                    <h2 class="text-4xl lg:text-6xl font-extrabold mb-6 leading-tight">Kejutan Opening Khusus Singaraja!</h2>
+                    <p class="text-xl text-slate-900 font-semibold mb-10 leading-relaxed">
+                        10 Pendaftar Pertama Khusus Bulan Ini: <br>
+                        <span class="bg-white px-2 py-1 rounded-lg inline-block mt-2">✨ Gratis Pendaftaran + Free Alat Tulis ✨</span>
+                    </p>
+                    <a href="https://wa.me/628216338362" class="bg-braindyDark text-white px-10 py-5 rounded-[2rem] font-extrabold text-xl shadow-xl hover:scale-105 transition-all inline-block">Klaim Promo Sekarang!</a>
+                </div>
+                <div class="flex-none z-10">
+                    <div class="flex flex-row -space-x-4 lg:-space-x-8">
+                        <img src="https://i.ibb.co.com/JjXtDKmH/Braindy-promo-a.png" class="h-32 lg:h-56 object-contain drop-shadow-xl rotate-[-10deg]">
+                        <img src="https://i.ibb.co.com/Q3fQ2H7b/Braindy-promo-b.png" class="h-32 lg:h-56 object-contain drop-shadow-xl z-10">
+                        <img src="https://i.ibb.co.com/BKqfWzSB/Braindy-promo-c.png" class="h-32 lg:h-56 object-contain drop-shadow-xl rotate-[10deg]">
+                    </div>
+                </div>
+            </div>
+            <div class="absolute top-0 right-0 w-96 h-96 bg-white/20 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+        </div>
+    </section>
+
+    <section id="biaya" class="py-24 bg-white px-4 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-3xl lg:text-5xl font-extrabold mb-4">Investasi Ilmu Si Kecil</h2>
+                <p class="text-slate-500 font-medium tracking-wide">Pilih paket yang paling pas untuk kenyamanan belajar.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-end">
+                <div class="bg-slate-50 p-10 rounded-[3rem] border-2 border-slate-100 hover:border-braindyBlue transition-all">
+                    <h4 class="text-xl font-bold mb-2">Sesi Perkenalan</h4>
+                    <p class="text-4xl font-extrabold mb-8">50rb <span class="text-sm font-normal text-slate-400">/meet</span></p>
+                    <div class="space-y-4 mb-10">
+                        <div class="flex items-center gap-3 font-medium text-slate-600">
+                            <div class="w-5 h-5 bg-green-400 rounded-full flex items-center justify-center text-white text-[10px]">✓</div>
+                            90 Menit Belajar
+                        </div>
+                        <div class="flex items-center gap-3 font-medium text-slate-600">
+                            <div class="w-5 h-5 bg-green-400 rounded-full flex items-center justify-center text-white text-[10px]">✓</div>
+                            Flashcards Fisik
+                        </div>
+                    </div>
+                    <a href="https://wa.me/628216338362" class="w-full py-4 rounded-2xl border-2 border-slate-200 font-bold block text-center hover:bg-braindyBlue hover:text-white hover:border-braindyBlue transition-all uppercase tracking-widest text-sm">Pilih</a>
+                </div>
+
+                <div class="bg-braindySoftBlue p-10 rounded-[4rem] border-4 border-braindyBlue shadow-[0_30px_60px_-15px_rgba(58,190,249,0.3)] relative scale-100 lg:scale-110 z-10">
+                    <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-braindyDark text-white px-6 py-2 rounded-full text-xs font-black uppercase tracking-[.2em]">Paling Laris</div>
+                    <h4 class="text-2xl font-extrabold mb-2">Paket Cerdas</h4>
+                    <p class="text-6xl font-black mb-8">180rb</p>
+                    <div class="space-y-5 mb-12">
+                        <div class="flex items-center gap-3 font-bold text-slate-700">
+                            <div class="w-6 h-6 bg-braindyBlue rounded-full flex items-center justify-center text-white text-[12px]">✓</div>
+                            Free Trial Class
+                        </div>
+                        <div class="flex items-center gap-3 font-bold text-slate-700">
+                            <div class="w-6 h-6 bg-braindyBlue rounded-full flex items-center justify-center text-white text-[12px]">✓</div>
+                            90 Menit Sesi
+                        </div>
+                        <div class="flex items-center gap-3 font-bold text-slate-700 text-left">
+                            <div class="w-6 h-6 bg-braindyBlue rounded-full flex items-center justify-center text-white text-[12px]">✓</div>
+                            Fleksibel & Personal
+                        </div>
+                    </div>
+                    <a href="https://wa.me/628216338362" class="w-full py-5 rounded-[2rem] bg-braindyBlue text-white font-black text-xl block text-center shadow-xl hover:bg-sky-500 transition-all uppercase tracking-widest">Pilih Paket</a>
+                </div>
+
+                <div class="bg-slate-50 p-10 rounded-[3rem] border-2 border-slate-100 hover:border-braindyBlue transition-all">
+                    <h4 class="text-xl font-bold mb-2">Paket Juara</h4>
+                    <p class="text-4xl font-extrabold mb-8">360rb</p>
+                    <div class="space-y-4 mb-10">
+                        <div class="flex items-center gap-3 font-medium text-slate-600">
+                            <div class="w-5 h-5 bg-green-400 rounded-full flex items-center justify-center text-white text-[10px]">✓</div>
+                            Intensif 2x Seminggu
+                        </div>
+                        <div class="flex items-center gap-3 font-medium text-slate-600">
+                            <div class="w-5 h-5 bg-green-400 rounded-full flex items-center justify-center text-white text-[10px]">✓</div>
+                            E-Sertifikat Keren
+                        </div>
+                    </div>
+                    <a href="https://wa.me/628216338362" class="w-full py-4 rounded-2xl border-2 border-slate-200 font-bold block text-center hover:bg-braindyBlue hover:text-white hover:border-braindyBlue transition-all uppercase tracking-widest text-sm">Pilih</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-braindyDark text-white pt-24 pb-12 px-4 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-16 relative z-10">
+            <div class="col-span-1 lg:col-span-2 text-center md:text-left">
+                <img src="https://i.ibb.co.com/NdcY3Zz8/logo-bimbel.png" class="h-20 mb-10 mx-auto md:mx-0 bg-white p-3 rounded-[2rem]">
+                <p class="text-slate-400 text-lg leading-relaxed max-w-sm mx-auto md:mx-0 font-light">
+                    Menciptakan ekosistem belajar yang asyik bagi anak-anak Singaraja untuk jago Bahasa Inggris dan berani berpikir kritis.
+                </p>
+            </div>
+            
+            <div class="text-center md:text-left">
+                <h5 class="text-braindyYellow font-black uppercase tracking-widest text-sm mb-10">Navigasi</h5>
+                <ul class="space-y-6 text-slate-300 font-medium">
+                    <li><a href="#home" class="hover:text-braindyBlue transition">Home</a></li>
+                    <li><a href="#program" class="hover:text-braindyBlue transition">Program Belajar</a></li>
+                    <li><a href="#biaya" class="hover:text-braindyBlue transition">Paket Investasi</a></li>
+                </ul>
+            </div>
+
+            <div class="text-center md:text-left">
+                <h5 class="text-braindyYellow font-black uppercase tracking-widest text-sm mb-10">Hubungi Kami</h5>
+                <div class="space-y-6">
+                    <a href="https://www.instagram.com/braindyeducation/" target="_blank" class="flex items-center justify-center md:justify-start group">
+                        <span class="w-12 h-12 flex items-center justify-center bg-slate-800 rounded-2xl mr-4 group-hover:bg-pink-600 transition-all">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </span>
+                        <span class="text-slate-300 font-bold">@braindyeducation</span>
+                    </a>
+                    
+                    <a href="https://www.facebook.com/share/18ntjz7MFe/" target="_blank" class="flex items-center justify-center md:justify-start group">
+                        <span class="w-12 h-12 flex items-center justify-center bg-slate-800 rounded-2xl mr-4 group-hover:bg-blue-600 transition-all">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                        </span>
+                        <span class="text-slate-300 font-bold">Facebook Page</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto border-t border-slate-800 mt-20 pt-10 text-center">
+            <p class="text-slate-500 text-sm font-medium tracking-wide">
+                &copy; 2026 Braindy Education Singaraja. Aktif & Interaktif!
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
